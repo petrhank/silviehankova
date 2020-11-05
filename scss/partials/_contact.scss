@@ -20,3 +20,16 @@
 q{
     font-weight: 300;
 }
+
+.card-title{
+    .title{
+        font-family: $logo-font;
+        font-size: 1em;
+        font-weight: 700;
+        color:$accent-color;
+    }
+    .name{
+        font-size: 0.8em;
+        }
+}
+

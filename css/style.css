@@ -55,7 +55,8 @@ h1 {
 /*Oprava dekorace textu zkratky u některých prohlížečů*/
 abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*------------------KONEC------------------CORE.CSS------------------KONEC------------------*/
@@ -74,6 +75,10 @@ abbr[title] {
   color: #901328;
 }
 
+.navbar .navbar-brand div {
+  font-size: 1.2em;
+}
+
 .navbar .nav-item .nav-link {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -90,8 +95,27 @@ abbr[title] {
   border-color: black;
 }
 
+#navbar-toggler {
+  outline: none;
+}
+
 .navbar-toggler-icon {
   color: black;
+}
+
+@media (max-width: 400px) {
+  .navbar .navbar-brand {
+    font-size: 0.9em;
+  }
+  p, ul {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar .navbar-brand {
+    font-size: 0.75em;
+  }
 }
 
 .carousel-item {
@@ -102,7 +126,8 @@ abbr[title] {
   position: absolute;
   bottom: 0;
   max-width: none;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-height: 100%;
 }
 
@@ -163,7 +188,10 @@ abbr[title] {
   float: left;
   width: 0;
   white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+  content: ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . ";
 }
 
 #cenik ul span:first-child {
@@ -201,6 +229,17 @@ abbr[title] {
 
 q {
   font-weight: 300;
+}
+
+.card-title .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 1em;
+  font-weight: 700;
+  color: #901328;
+}
+
+.card-title .name {
+  font-size: 0.8em;
 }
 
 footer {
@@ -243,4 +282,3 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
 }
-/*# sourceMappingURL=style.css.map */
