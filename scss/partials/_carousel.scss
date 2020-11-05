@@ -9,9 +9,9 @@
     object-fit: cover;
     min-height: 100%;
 }
+
 @media (min-width: 576px) {
     .carousel-item{
         min-height: 80vh;
-    }
-    
+    } 
 }
