@@ -1,0 +1,33 @@
+.navbar{
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    .navbar-brand{
+        font-family: $logo-font;
+        font-size: 1em;
+        color:$accent-color;
+        &:hover{
+            color: $accent-color;
+        }
+    }
+    .nav-item .nav-link{
+        color: rgba(0, 0, 0, 0.5);
+        &.active{
+            color: $accent-color;
+        }
+        &:hover{
+            color: $accent-color;
+        }
+    }
+}
+
+.scrolled{
+    background-color: white;
+}
+
+.navbar-toggler{
+    border-color: black;
+}
+
+.navbar-toggler-icon{
+    color: black;
+}

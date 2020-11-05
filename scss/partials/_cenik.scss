@@ -1,0 +1,33 @@
+#cenik ul{
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    & li::before{
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content:
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+     ". . . . . . . . . . . . . . . . . . . . "
+    }
+    & span:first-child{
+        padding-right: 0.33em;
+        background: $background-color;
+    }
+    & span + span {
+        float: right;
+        padding-left: 0.33em;
+        background: $background-color;
+    }
+}
+#cenik{
+    box-shadow: 
+        inset 0px 6px 10px -6px rgba(0,0,0,0.3),
+        inset 0px -6px 10px -6px rgba(0,0,0,0.3);
+    background-color: $background-color;
+    color: white;
+    overflow: hidden;
+}
+

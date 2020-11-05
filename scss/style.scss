@@ -1,0 +1,33 @@
+@import "partials/_core.scss";
+@import "partials/_variables.scss";
+@import "partials/_mixins.scss";
+@import "partials/navbar";
+@import "partials/carousel";
+@import "partials/sluzby";
+@import "partials/cenik";
+@import "partials/contact";
+@import "partials/footer";
+
+.anchor{
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: hidden;
+}
+
+.thumbnail{
+    border: 4px solid white;
+    // border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+

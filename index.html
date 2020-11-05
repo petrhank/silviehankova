@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<!-- info -->
+	<meta charset="utf-8">
+	<meta name="description" content="popis webu">
+	<meta name="author" content="Petr Hank">
+	<title>Silvie Hanková | Manikúra a modeláž nehtů</title>
+<!--  -->
+	<meta name="google" content="notranslate"> <!-- Vypíná nabídku překladu v Google Chrome -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet"> 
+	<link href="img/icons/beauty-icons/flaticon.css" rel="stylesheet" type="text/css">
+<!-- favicon -->
+	<link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+<!-- style -->
+	<link rel="stylesheet" href="css/lib/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="300">
+
+	<header class="navbar navbar-light navbar-expand-lg fixed-top">
+		<div class="container">
+			<a class="navbar-brand m-0 p-0" href="#">
+				<h1 class="m-0">Silvie Hanková</h1>
+			</a>
+
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+
+			<nav class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" role="navigation">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+				  		<a class="nav-link active" href="#sluzby-anchor">Služby</a>
+					</li>
+					<li class="nav-item">
+				  		<a class="nav-link" href="#cenik-anchor">Ceník</a>
+					</li>
+					<li class="nav-item">
+				  		<a class="nav-link" href="#kontakt-anchor">Kontakt</a>
+					</li>
+			  	</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#portfolio-carousel" data-slide-to="1"></li>
+				<li data-target="#portfolio-carousel" data-slide-to="2"></li>
+				<li data-target="#portfolio-carousel" data-slide-to="3"></li>
+			</ol>
+			
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="img/carousel-1.jpg" data-toggle="lightbox">
+						<img class="d-block w-100" src="img/carousel-1.jpg" alt="Obrázek nehtů 1">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="img/carousel-2.jpg" data-toggle="lightbox">
+						<img class="d-block w-100" src="img/carousel-2.jpg" alt="Obrázek nehtů 2">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="img/carousel-3.jpg" data-toggle="lightbox">
+						<img class="d-block w-100" src="img/carousel-3.jpg" alt="Obrázek nehtů 3">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="img/carouse4-4.jpg" data-toggle="lightbox">
+						<img class="d-block w-100" src="img/carousel-4.jpg" alt="Obrázek nehtů 4">
+					</a>
+				</div>
+			</div>
+			
+			<a class="carousel-control-prev" href="#portfolio-carousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#portfolio-carousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<section class="container-fluid px-0 pb-5" id="sluzby">
+			<span class="anchor" id="sluzby-anchor"></span>
+
+			<div class="container-fluid position-relative d-flex justify-content-center mt-4">
+				<h2>Služby</h2>
+			</div>
+
+			<div class="container position-relative ">
+				
+				<hr>
+				<nav class="nav">
+					<a class="nav-link d-flex align-items-center justify-content-center text-center col-4 col-md-2 py-1 m-0 w-auto active" id="manikura-button" data-toggle="tab" href="#manikura" role="tab" aria-controls="manikura" aria-expanded="true">Manikúra</a>
+					<a class="nav-link d-flex align-items-center justify-content-center text-center col-4 col-md-2 py-1 m-0 w-auto" id="modelaz-button" data-toggle="tab" href="#modelaz" role="tab" aria-controls="modelaz" aria-expanded="false">Modeláž nehtů</a>
+					<a class="nav-link d-flex align-items-center justify-content-center text-center col-4 col-md-2 py-1 m-0 w-auto" id="pshine-button" data-toggle="tab" href="#pshine" role="tab" aria-controls="pshine" aria-expanded="false">P.Shine</a>
+					<a class="nav-link d-flex align-items-center justify-content-center text-center col-4 col-md-2 py-1 m-0 w-auto" id="masaz-button" data-toggle="tab" href="#masaz" role="tab" aria-controls="masaz" aria-expanded="false">Masáž rukou</a>
+					<a class="nav-link d-flex align-items-center justify-content-center text-center col-4 col-md-2 py-1 m-0 w-auto" id="zabaly-button" data-toggle="tab" href="#zabaly" role="tab" aria-controls="zabaly" aria-expanded="false">Parafínové zábaly</a>
+					<a class="nav-link d-flex align-items-center justify-content-center text-center col-4 col-md-2 py-1 m-0 w-auto" id="modelaz-nohou-button" data-toggle="tab" href="#modelaz-nohou" role="tab" aria-controls="modelaz-nohou" aria-expanded="false">Modeláž nehtů na nohou</a>
+				</nav>
+				<div class="container d-flex justify-content-start w-100 mb-4">
+					<hr class="underline d-none d-md-block p-0 m-0">
+				</div>
+
+				
+				<div class="container-fluid">
+				  	<div class="tab-content" id="nav-tabContent">
+						<article class="tab-pane fade show active" id="manikura" role="tabpanel" aria-labelledby="manikura-button">
+							<div class="row">
+								<div class="col-md mr-md-3 p-0">
+									<h4 class="">Dámská manikúra</h4>
+									<p>
+										Manikúru provádím klasickou suchou, nebo mokrou metodou. Záleží na tom, co klientka potřebuje. Manikůra zahrnuje:
+									</p>
+									<ul>
+										<li>Zapilování nehtů do požadovaného tvaru</li>
+										<li>Vyčištění nehtů zespodu</li>
+										<li>Zatlačení a odbroušení přebytečné nehtové kůžičky</li>
+										<li>Vyrovnání povrchu nehtů</li>
+										<li>Vyleštění nehtů</li>
+										<li>Lakování - klasické + konečný nadlak, nebo pouze výživná kúra na nehty</li>
+										<li>Olej na nehtový val a na závěr aplikace krému na ruce</li>
+										<li>Je možno zvolit francouzské lakování, které není v ceně manikúry</li>
+										
+									</ul>
+									<p>
+										Manikúru je vhodné provést 2x do měsíce.  
+									</p>	
+								</div>
+								<div class="col-md ml-md-3 p-0">
+									<h4 class="">Pánská manikúra</h4>
+									<p>
+										Probíhá stejným způsobem, jako dámská, pouze bez lakování nehtů. Pánové mohou zvolit i P.Shine.
+									</p>
+								</div>
+							</div>
+						</article>
+
+						<article class="tab-pane fade" id="modelaz" role="tabpanel" aria-labelledby="modelaz-button">
+							<h4 class="">Modeláž nehtů</h4>
+							<a href="img/modelaz.jpg" data-toggle="lightbox" class="d-none d-md-block">
+								<img src="img/modelaz_thumb.jpg" class="img-fluid thumbnail float-right ml-3 w-50" alt="Obrázek modeláž nehtů">
+							</a>
+							<p>
+								Modeláž je nehtů umělé zpevnění a prodloužení přírodnich nehtů. Provádí se gely akryly, akrygely a jinými metodami. Já dávám přednost přirozenějšímu vzhledu nehtů, proto používám gely a akrygely. Pro mě osobně je nehtová modeláž něco úžasného. Je to nejlevnější umělé vylepšení těla, které si můžete dovolit, a tato změna se dá vrátit zpět do původního stavu. Nemusíte mít doma spoustu přípravků pro domácí péči o přírodní nehty. Ušetříte čas, který byste péči o vlastní nehty musela sama věnovat. Jsem ráda, když vidím klientku s opravdu problematickými nehty odcházet spokojenou s krásnými hladkými nehty. 
+							</p>
+							<p>
+								Nové nehty vždy modeluji třífázovým gelem. Je to proto, že nehty projdou zatěžkávací zkouškou a klientka si na ně musí zvyknout. Nehty také musíme srovnat a udělat jim tvar, musí být hezké a musí se klientce líbit. Tento postup trvá zhruba 90 minut. Hodně záleží na stavu nehtů klientky. Já si nechávám na nové nehty 120 minut čas. 
+							</p>
+							<p>
+								Jednofázovým gelem nehty po zhruba 4 týdnech doplňuji. Nehty už mají tvar, upravuji pouze délku a doplním část nového narostlého nehtu. Některé klientky chodí po dvou týdnech na tzv. &quot;úpravu&quot;. To znamená, že spiluji odrost nehtu, dotáhnu pouze vrchní gel, ať už barevný, nebo průhledný a klientka má stále hezké nehty, až do dalšího doplnění. Po 4 týdnech už je opravdu potřeba gel doplnit, protože se stává křehčím a mohl by se po sebemenším nárazu zlomit. Silným faktorem, ke kterému je potřeba přihlížet, co se týče trvanlivosti nehtů, je povolání, které vykonáváte. Klientky, které mají náročnější manuální práci (pokojské, kadeřnice, servírky, zdravotní sestry...), někdy musí chodit na doplnění po 3 týdnech.
+							</p>
+						</article>
+
+						<article class="tab-pane fade" id="pshine" role="tabpanel" aria-labelledby="pshine-button">
+							<h4 class="">P.Shine</h4>
+							<p>
+								Pokud dáváte přednost přirozeným nehtům, pak vyzkoušejte P.Shine. Je to čistě přírodní technika úpravy nehtů, která podporuje prokrvení a zdravý růst nehtů, jejich posílení a obohacení o důležité vitamíny. P.Shine se provádí zaleštěním včelího vosku a hlinky křemičité do přírodního nehtu. Současně se také prokrví nehtová ploténka a zabezpečí se tak její zdravý růst. 
+							</p>
+							<p>
+								Ačkoliv je technika P.Shine u nás známá již řadu let, málokdo ví, že princip leštění nehtů vychází z dávné historie japonských předků, kteří pečovali o své nehty již před mnoha staletími. Tuto metodu používaly v císařském paláci gejši, které si tak zkrášlovaly své nehty, jež byly vždy krásné a lesklé, a to bez použití jakýchkoliv laků plných chemikálií. Vystačily si pouze s jednoduchým nanášením vosku a leštěním. 
+							</p>
+							<p>
+								Pokud máte roztřepené, lámavé nebo nerostoucí nehty a ani koupele, olejíčky a vyživující laky vám nepomohly, pak je P.Shine ta správná volba. Nehty se vyživí, prokrví a porostou rychleji. Navíc vypadají velmi hezky, upraveně a lesknou se jako při použití bezbarvého laku. Nehty jsou krásně hladké, protože pasta zahladí všechny nerovnosti na povrchu nehtů. P.Shine chrání nehty před nepříznivými vlivy jako je voda, saponáty apod. a je vhodná nejen pro ženy, ale také pro muže, kteří chtějí mít upravené ruce bez záděr. Celá procedura trvá přibližně 45 minut a výsledkem jsou nádherné nehty s vysokým leskem. Proceduru je však potřeba opakovat. Doporučená další návštěva je přibližně za 2 až 3 týdny podle typu nehtů.
+							</p>
+						</article>
+
+						<article class="tab-pane fade" id="masaz" role="tabpanel" aria-labelledby="masaz-button">
+							<h4 class="">Masáž rukou</h4>
+							<p>
+								Velice příjemná záležitost, která trvá asi 15 minut. Promasíruji vám ruce od špičky prstů přes dlaně, hřbet ruky až po lokty. Vhodné a příjemné je masáž ukončit teplým parafínovým zábalem. Nechte se trošku rozmazlovat, vaše ruce si to zaslouží!
+							</p> 
+						</article>
+
+						<article class="tab-pane fade" id="zabaly" role="tabpanel" aria-labelledby="zabaly-button">
+							<h4 class="">Parafínové zábaly</h4>
+							<p>
+								Provádím teplé parafínové zábaly a zábaly výživnou maskou. Přípravky se aplikují na ruce, které se zabalí do igelitových rukavic, do termo-rukavic a nechají se působit cca 20 min. Zábaly pomáhají k vypnutí a hydrataci pokožky na rukou. Kůže díky nim je hedvábná a hladká.Parafínový zábal stačí aplikovat 1x měsíčně. U extrémně suché pokožky je vhodné 2x měsíčně + vybrat kvalitní přípravky na domácí péči.Zábal je vhodné doplnit masáží rukou pro váš příjemný pocit. 
+							</p> 
+						</article>
+
+						<article class="tab-pane fade" id="modelaz-nohou" role="tabpanel" aria-labelledby="modelaz-nohou-button">
+							<h4 class="">Modeláž nehtů na nohou</h4>
+							<p>
+								Modeláž nehtů na nohou provádím v období od června do konce září. Je velice krásné mít na léto upravené nehty na nohou do sandálů a otevřených bot. Nohy působí elegantně a čistě. Používám speciální gel na nehty na nohou, protože na nohy je vyvíjen jiný tlak než na ruce,proto je i složení gelu jiné. Provádím bud francouzskou nanikúru jakékoli barvy a zdobení, nebo barevný gel na celý nehet. Na nohou rostou nehty pomaleji než na rukou, takže na doplnění většina klientek chodí za 1,5 měsíce až 2. 
+							</p>
+							<p class="text-danger">Podmínkou modeláže jsou zdravé a čisté  nehty a nohy!</p>
+						</article>
+				  	</div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="container-fluid px-0  pb-5" id="cenik">
+			<span class="anchor" id="cenik-anchor"></span>
+
+			<div class="container">
+				<div class="d-flex justify-content-center mt-4">
+					<h2>Ceník</h2>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<ul class="flex-grow-1">
+							<li><span class="sluzba">Modeláž nehtů (doplnění gelu)</span> <span>640Kč</span></li>
+							<li><span class="sluzba">Úprava model.nehtů po 14 dnech</span> <span>260Kč</span></li>
+							<li><span class="sluzba">Manikúra Gel-lak</span> <span>400Kč</span></li>
+							<li><span class="sluzba">Klasická manikúra</span> <span>230Kč</span></li>
+							<li><span class="sluzba">Japonská manikúra P. Shine</span> <span>250Kč</span></li>
+							<li><span class="sluzba">Parafínový teplý zábal rukou</span> <span>80Kč</span></li>
+							<li><span class="sluzba">Masáž rukou (20 min.)</span> <span>80Kč</span></li>
+						</ul>
+					</div>
+					<div class="col-md-4 offset-md-2 d-flex">
+						<a href="img/salon.jpg" data-toggle="lightbox">
+							<img src="img/salon_thumb.jpg" class="img-fluid thumbnail" alt="Obrázelk salónu">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container-fluid p-0" id="kontakt">
+			<span class="anchor" id="kontakt-anchor"></span>
+
+			<div class="container pb-5">
+				<div class="d-flex justify-content-center mt-4">
+					<h2>Kontakt</h2>
+				</div>
+				<hr>
+				<div class="row ">
+					<div class="col-lg-4 col-md-5">
+						<div class="card">
+							<img src="img/obrazek_kontakt_thumb.jpg" class="card-img-top" alt="Obrázek nehtů na vititce">
+							<address class="card-body row align-items-center justify mb-0">
+								<div class="col-10 mb-3">
+									<h5 class="card-title mb-0">Silvie Hanková</h5>
+									<small class="ml-3">manikúra a modeláž nehtů</small>
+								</div>
+								<div class="col-2 text-center p-0">
+									<a href="https://www.facebook.com/modelaznehtumanikura" rel="external" target="_blank"><i class="fab fa-facebook-square"></i></a>
+								</div>
+
+								<i class="col-2 text-center fas fa-map-marker-alt"></i>	
+								<p class="col-10 my-1 card-text">	
+									Krkonošská 12<br>
+									Vrchlabí<br>
+									543 01
+								</p>
+
+								<i class="col-2 text-center fas fa-mobile-alt"></i>
+								<p class="col-10 my-1 card-text">
+									<a href="tel:+420731233682">731 233 682</a>
+								</p>
+
+								<i class="col-2 text-center far fa-envelope"></i>
+								<p class="col-10 my-1 card-text">
+									<a href="mailto:silvie.hankova@volny.cz">silvie.hankova@volny.cz</a>
+								</p>
+
+							</address>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-7 mt-4">
+						<h3>O mně</h3>
+						<p>
+							V oboru nehtové modeláže a manikúry pracuji řadu let. Moje práce je zároveň mým koníčkem. Jezdím na různá školení a kosmetické výstavy, abych viděla co je v oboru nového. Pracuji s kvalitní nehtovou kosmetikou značek ENII NAILS a LCN. 
+						</p>
+						<p>
+							Mám radost, když jsou zákaznice spokojené a líbí se jim, co jsme společně vytvořily. Prioritou pro mě je, aby se u mě v salonku cítily klientky dobře a odpočinuly si. V případě jakýchkoli dotazů mě neváhejte kontaktovat!
+						</p>
+						<q class="font-italic">
+							Každá žena dnes může mít krásně upravené ruce, at už zvolí nehtovou modeláž nebo manikúru.
+						</q>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid p-0 map-wrapper">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.873535889272!2d15.609086621051988!3d50.627267902212026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e9552917d2fa3%3A0xb38af766d2904eea!2sSilvie%20Hankov%C3%A1!5e0!3m2!1scs!2scz!4v1604144351687!5m2!1scs!2scz" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</section>
+	</main>
+
+	<picture>
+
+	</picture>
+
+	<footer class="d-flex flex-column justify-content-center align-items-center">
+		<small class="text-center">			
+			<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+			<div>&copy; 2020 Petr Hank. All Rights Reserved.</div>
+		</small>
+	</footer>
+	
+
+<!--JavaScript-->
+
+	<script src="js/lib/jquery-3.5.1.min.js"></script>
+	<script src="js/lib/bootstrap.bundle.min.js"></script>
+
+	<script src="js/lib/ekko-lightbox.min.js"></script>
+	<script src="https://kit.fontawesome.com/37fd641ca5.js" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

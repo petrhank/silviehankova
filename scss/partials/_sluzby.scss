@@ -1,0 +1,37 @@
+#sluzby .nav-link{
+    color: rgba(0,0,0,0.5);
+    outline: none;
+    border-bottom: 1px solid white;
+    &.active{
+        color: $accent-color;
+        background: transparent;
+    }
+}
+
+#sluzby{
+    overflow: hidden;
+    p::before{
+        border-left:2px solid $accent-color;
+        padding-left: 0.4em;
+        content: "";
+    }
+}
+
+.underline{
+    position: absolute;
+    left: 0;
+    transition: all ease 200ms;
+    background: $accent-color;
+}
+
+
+@media (max-width: 576px) {
+    #sluzby .nav-link{
+        &.active{
+            border-bottom: 1px solid $accent-color;
+        }
+    }
+}
+
+
+

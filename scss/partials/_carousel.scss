@@ -1,0 +1,17 @@
+.carousel-item{
+    min-height: 50vh;
+}
+
+.carousel-item img{
+    position: absolute;
+    bottom: 0;
+    max-width: none;
+    object-fit: cover;
+    min-height: 100%;
+}
+@media (min-width: 576px) {
+    .carousel-item{
+        min-height: 80vh;
+    }
+    
+}
