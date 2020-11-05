@@ -55,28 +55,13 @@ h1 {
 /*Oprava dekorace textu zkratky u některých prohlížečů*/
 abbr[title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*------------------KONEC------------------CORE.CSS------------------KONEC------------------*/
 .navbar {
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.navbar .navbar-brand {
-  font-family: "Dancing Script", cursive;
-  font-size: 1em;
-  color: #901328;
-}
-
-.navbar .navbar-brand:hover {
-  color: #901328;
-}
-
-.navbar .navbar-brand div {
-  font-size: 1.2em;
 }
 
 .navbar .nav-item .nav-link {
@@ -89,6 +74,20 @@ abbr[title] {
 
 .navbar .nav-item .nav-link:hover {
   color: #901328;
+}
+
+#brand {
+  font-family: "Dancing Script", cursive;
+  font-size: 1em;
+  color: #901328;
+}
+
+#brand:hover {
+  color: #901328;
+}
+
+#brand div {
+  font-size: 1.2em;
 }
 
 .navbar-toggler {
@@ -126,8 +125,7 @@ abbr[title] {
   position: absolute;
   bottom: 0;
   max-width: none;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   min-height: 100%;
 }
 
@@ -188,10 +186,7 @@ abbr[title] {
   float: left;
   width: 0;
   white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . ";
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
 }
 
 #cenik ul span:first-child {
@@ -282,3 +277,4 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
 }
+/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,3 @@
-
 //Light box
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 		event.preventDefault();
@@ -23,5 +22,21 @@ $(window).resize(function(){
 });
 
 checkBtn($('#sluzby .nav-link.active'));
+
+// Date
+
+// function pocetAktivnichLet
+
+function pocetAktivnichLet() {
+	let datum = new Date();
+	const pocatecniRok = 2006;
+	let aktualniRok = datum.getFullYear();
+	let pocetLet = aktualniRok - pocatecniRok;
+	
+	document.querySelector('#pocet-let').innerText = pocetLet;
+}
+
+pocetAktivnichLet();
+
 
 
