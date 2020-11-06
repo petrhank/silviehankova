@@ -76,44 +76,45 @@ abbr[title] {
   color: #901328;
 }
 
-#brand {
+#brand h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 1em;
+  font-size: 2em;
   color: #901328;
 }
 
-#brand:hover {
+#brand h1:hover {
   color: #901328;
 }
 
-#brand div {
-  font-size: 1.2em;
-}
-
-.navbar-toggler {
-  border-color: black;
+#brand h1 .brand-sluzba {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #navbar-toggler {
   outline: none;
+  border: none;
 }
 
-.navbar-toggler-icon {
-  color: black;
-}
-
-@media (max-width: 400px) {
-  .navbar .navbar-brand {
-    font-size: 0.9em;
+@media (max-width: 768px) {
+  #brand h1 {
+    line-height: 1em;
   }
-  p, ul {
-    font-size: 0.9em;
+}
+
+@media (max-width: 576px) {
+  #brand h1 {
+    font-size: 1.7em;
   }
 }
 
 @media (max-width: 360px) {
-  .navbar .navbar-brand {
-    font-size: 0.75em;
+  #brand h1 {
+    font-size: 1.5em;
+  }
+  p, ul {
+    font-size: 0.9em;
   }
 }
 
@@ -226,6 +227,10 @@ q {
   font-weight: 300;
 }
 
+.card-title {
+  line-height: 1.2em;
+}
+
 .card-title .title {
   font-family: "Dancing Script", cursive;
   font-size: 1em;
@@ -233,8 +238,10 @@ q {
   color: #901328;
 }
 
-.card-title .name {
+.card-title .card-sluzba {
   font-size: 0.8em;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 footer {

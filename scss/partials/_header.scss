@@ -12,41 +12,50 @@
     }
 }
 
-#brand{
+#brand h1{
     font-family: $logo-font;
-    font-size: 1em;
+    font-size: 2em;
     color:$accent-color;
     &:hover{
         color: $accent-color;
     }
-    div{
-        font-size: 1.2em;
-        }
-}
-
-.navbar-toggler{
-    border-color: black;
+    .brand-sluzba{
+        font-size: 0.75em;
+        font-weight: 400;
+        color: rgba(0,0,0,0.5);
+    }
 }
 
 #navbar-toggler{
     outline: none;
+    border: none;
 }
 
-.navbar-toggler-icon{
-    color: black;
+@media (max-width: 768px){
+    #brand h1{
+        line-height: 1em;
+    }
 }
 
-@media (max-width: 400px) {
-    .navbar .navbar-brand{
-        font-size: 0.9em;
+@media (max-width: 576px){
+    #brand h1{
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 360px) {
+    #brand h1{
+        font-size: 1.5em;
     }
     p, ul{
         font-size: 0.9em;
     }
 }
 
-@media (max-width: 360px) {
-    .navbar .navbar-brand{
-        font-size: 0.75em;
-    }
-}
+
+
+
+
+
+
+

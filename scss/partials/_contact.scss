@@ -22,14 +22,18 @@ q{
 }
 
 .card-title{
+    line-height: 1.2em;
     .title{
         font-family: $logo-font;
         font-size: 1em;
         font-weight: 700;
         color:$accent-color;
+
     }
-    .name{
+    .card-sluzba{
         font-size: 0.8em;
+        font-weight: 400;
+        color: rgba(0,0,0,0.5);
     }
 }
 
