@@ -55,7 +55,8 @@ h1 {
 /*Oprava dekorace textu zkratky u některých prohlížečů*/
 abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*------------------KONEC------------------CORE.CSS------------------KONEC------------------*/
@@ -126,7 +127,8 @@ abbr[title] {
   position: absolute;
   bottom: 0;
   max-width: none;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-height: 100%;
 }
 
@@ -187,7 +189,10 @@ abbr[title] {
   float: left;
   width: 0;
   white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+  content: ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . ";
 }
 
 #cenik ul span:first-child {
@@ -284,4 +289,3 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
 }
-/*# sourceMappingURL=style.css.map */
