@@ -55,8 +55,7 @@ h1 {
 /*Oprava dekorace textu zkratky u některých prohlížečů*/
 abbr[title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*------------------KONEC------------------CORE.CSS------------------KONEC------------------*/
@@ -88,8 +87,9 @@ abbr[title] {
 }
 
 #brand h1 .brand-sluzba {
-  font-size: 0.75em;
-  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.7em;
+  font-weight: 100;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -127,8 +127,7 @@ abbr[title] {
   position: absolute;
   bottom: 0;
   max-width: none;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   min-height: 100%;
 }
 
@@ -189,10 +188,7 @@ abbr[title] {
   float: left;
   width: 0;
   white-space: nowrap;
-  content: ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . ";
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
 }
 
 #cenik ul span:first-child {
@@ -289,3 +285,4 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
 }
+/*# sourceMappingURL=style.css.map */
